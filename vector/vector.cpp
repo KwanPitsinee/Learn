@@ -75,9 +75,16 @@ int main(){
   }
   cout<<"\n";
   
-  vector<int> s(7,4);
+  vector<int> s(7,4); // {4,4,4,4,4,4,4}
   cout<<"vector s\n";
   for(auto e:s){
+  	cout<<e<<" ";
+  }
+  cout<<"\n";
+  
+  vector<int> ss(t.begin()+1,t.begin()+3); //{index1,index2}={2,3}
+  cout<<"vector ss\n";
+  for(auto e:ss){
   	cout<<e<<" ";
   }
   cout<<"\n";
