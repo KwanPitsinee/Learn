@@ -13,13 +13,13 @@ void vector_swap(vector<int> &v1,vector<int> &v2, int start1, int end1, int star
   v2  |0... s2-1| |s1 ...   e1-1 | |e2 -- n-1| 
   */ 
   //vector<int> v1ans,v2ans;
-  vector<int> v1ans(v1.begin(),v1.begin()+start1);
+  vector<int> v1ans(v1.begin(),v1.begin()+(start1-1)+1);
   /*
   for(int i=0;i<=start1-1;i++){
    v1ans.push_back(v1[i]);
   }
   */
-  v1ans.insert(v1ans.end(),v2.begin()+start2,v2.begin()+end2);
+  v1ans.insert(v1ans.end(),v2.begin()+start2,v2.begin()+(end2-1)+1);
   /*
   for(int i=start2;i<=end2-1;i++){
    v1ans.push_back(v2[i]); 
